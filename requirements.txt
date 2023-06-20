@@ -1,0 +1,8 @@
+streamlit-ext
+streamlit-player
+streamlit-extras
+plotly
+pandas
+numpy
+numpy-financial
+kaleido
