@@ -1,5 +1,8 @@
 import streamlit as st
 
+for k, v in st.session_state.items():
+    st.session_state[k] = v
+
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
