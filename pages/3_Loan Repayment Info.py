@@ -1,4 +1,4 @@
-import io
+from io import BytesIO
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -137,7 +137,7 @@ def plot_amortization_chart(dataframe):
         showlegend=True,
         height=600,
         width=850,
-        modebar={"remove": ["toImage"]},
+        # modebar={"remove": ["toImage"]},
         hovermode="x",
         colorway=['#1f77b4', '#ff7f0e', '#2ca02c']
     )
@@ -168,7 +168,7 @@ st.subheader("Amortization Chart")
 fig = plot_amortization_chart(table.reset_index())
 
 # Create an in-memory buffer
-buffer = io.BytesIO()
+buffer = BytesIO()
 fig.write_image(file=buffer, format="png")
 
 st.download_button(
