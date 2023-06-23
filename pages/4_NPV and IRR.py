@@ -103,7 +103,7 @@ def calculate_irr_percentage(
             ]
         )
 
-    df = pd.DataFrame(data, columns=["Year", "Annual Rent", "IRR"]).iloc[1:, :]
+    df = pd.DataFrame(data, columns=["Year", "Annual Rent", "IRR in %"]).iloc[1:, :]
     return irr, df.round(2)
 
 
