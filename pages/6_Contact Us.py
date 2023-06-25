@@ -12,4 +12,4 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.header("Send an Email at - reanalytica@gmail.com")
+st.header("Send an Email at - cust.reanalytica@gmail.com")
