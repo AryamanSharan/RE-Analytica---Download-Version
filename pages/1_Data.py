@@ -5,14 +5,14 @@ from streamlit_extras.app_logo import add_logo
 for k, v in st.session_state.items():
     st.session_state[k] = v
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+# hide_st_style = """
+#             <style>
+#             #MainMenu {visibility: hidden;}
+#             footer {visibility: hidden;}
+#             header {visibility: hidden;}
+#             </style>
+#             """
+# st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # EMI calculation
 def calculate_monthly_payment(principal, interest_rate, duration):
